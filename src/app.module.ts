@@ -5,16 +5,18 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [ TypeOrmModule.forRoot({
-    type: 'mysql',
-    host: 'localhost',
-    port: 3306,
-    username: 'root',
-    password: 'root',
-    database: 'groups',
-    entities: [],
-    synchronize: true,
-  }),],
+  imports: [ 
+  //   TypeOrmModule.forRoot({
+  //   type: 'mysql',
+  //   host: 'localhost',
+  //   port: 3306,
+  //   username: 'root',
+  //   password: 'root',
+  //   database: 'groups',
+  //   entities: [],
+  //   synchronize: true,
+  // }),
+],
   controllers: [AppController],
   providers: [AppService],
 })
