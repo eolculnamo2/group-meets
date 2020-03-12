@@ -6,4 +6,4 @@ before_install:
   - docker build -t eolculnamo2/docker-test -f Dockerfile.dev .
 
 script:
-  - docker run eolculnamo2/docker-test yarn test:cov
+  - docker run -e CI=true eolculnamo2/docker-test yarn test:cov
