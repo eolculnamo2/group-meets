@@ -1,5 +1,5 @@
 FROM node:12.13.1
 WORKDIR /usr/app
-RUN yarn install
+RUN yarn
 COPY ./ ./
 RUN yarn test:cov
